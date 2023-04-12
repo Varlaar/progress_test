@@ -1,0 +1,43 @@
+@import "../../commons/variables.scss";
+@import "../../commons/mixins.scss";
+
+.bonus {
+    &__container {
+        padding: 18px 18px 19px 20px;
+        background-color: $bgWhiteColor;
+        box-shadow: $bonusShadow;
+        border-radius: 20px;
+        @include flex(space-between, center);
+    }
+
+    &__contentRow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__bonusCount {
+        font-weight: $fw700;
+        font-size: $fz24;
+        line-height: $lh32;
+        color: $blackColor;
+        margin-bottom: 12px;
+    }
+
+    &__content {
+        @include flex(flex-start, center);
+    }
+
+    &__burningDate,
+    &__burningBonus {
+        font-weight: $fw400;
+        font-size: $fz16;
+        line-height: $lh24;
+        color: $greyColor;
+    }
+
+    &__burningDate,
+    &__burningImg {
+        margin-right: 8px;
+    }
+
+}

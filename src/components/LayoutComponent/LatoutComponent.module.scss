@@ -1,0 +1,25 @@
+@import "../../commons/variables.scss";
+@import "../../commons/mixins.scss";
+
+.wrapper {
+    width: 100%;
+    min-height: $minHeight;
+    background-color: $bgWhiteColor;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        min-height: $minHeight;
+        background: $bgRedColor;
+    }
+}
+
+.container {
+    padding: 0 20px;
+    @include absolute(50%, 50%, translate(-50%, -50%));
+    min-width: 100%;
+    z-index: 2;
+}

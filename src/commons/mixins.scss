@@ -1,0 +1,12 @@
+@mixin absolute($top, $lf, $trlt) {
+    position: absolute;
+    top: $top;
+    left: $lf;
+    transform: $trlt;
+}
+
+@mixin flex($jc, $ai) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}

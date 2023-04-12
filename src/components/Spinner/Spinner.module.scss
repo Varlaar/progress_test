@@ -1,0 +1,5 @@
+@import "../../commons/mixins.scss";
+
+.spinner {
+    @include absolute(50%, 50%, translate(-50%, -50%));
+}
