@@ -8,11 +8,10 @@ export const fetchBonus = (accessToken) => async (dispatch) => {
 
   try {
     const response = await requestBonus(accessToken);
-    console.log("bunus >>>", response.data);
     dispatch({
       type: types.FETCH_BONUS_SUCCESS,
       data: response.data.data,
-    });git
+    });
   } catch (error) {
     dispatch({
       type: types.FETCH_BONUS_FAILURE,
